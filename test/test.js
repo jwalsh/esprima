@@ -187,7 +187,7 @@ data = {
         end: { line: 1, column: 12 }
       }
     }
- },
+  },
 
   'Array Initializer': {
 
@@ -8117,157 +8117,251 @@ data = {
 
   },
   'Comma Operator': {
-    '1 + 1, 2 + 2':
-    {
-    "type": "ExpressionStatement",
-    "expression": {
-        "type": "SequenceExpression",
-        "expressions": [
-            {
-                "type": "BinaryExpression",
-                "operator": "+",
-                "left": {
-                    "type": "Literal",
-                    "value": 1,
-                    "raw": "1",
-                    "range": [
-                        0,
-                        0
-                    ],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 0
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 1
-                        }
-                    }
-                },
-                "right": {
-                    "type": "Literal",
-                    "value": 1,
-                    "raw": "1",
-                    "range": [
-                        4,
-                        4
-                    ],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 4
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 5
-                        }
-                    }
-                },
-                "range": [
-                    0,
-                    4
+    '1, 2, 3':
+        {
+          'type': 'ExpressionStatement',
+          'expression': {
+            'type': 'SequenceExpression',
+            'expressions': [
+              {
+                'type': 'Literal',
+                'value': 1,
+                'raw': '1',
+                'range': [
+                  0,
+                  0
                 ],
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 0
-                    },
-                    "end": {
-                        "line": 1,
-                        "column": 5
-                    }
+                'loc': {
+                  'start': {
+                    'line': 1,
+                    'column': 0
+                  },
+                  'end': {
+                    'line': 1,
+                    'column': 1
+                  }
                 }
-            },
-            {
-                "type": "BinaryExpression",
-                "operator": "+",
-                "left": {
-                    "type": "Literal",
-                    "value": 2,
-                    "raw": "2",
-                    "range": [
-                        7,
-                        7
-                    ],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 7
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 8
-                        }
-                    }
-                },
-                "right": {
-                    "type": "Literal",
-                    "value": 2,
-                    "raw": "2",
-                    "range": [
-                        11,
-                        11
-                    ],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 11
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 12
-                        }
-                    }
-                },
-                "range": [
-                    7,
-                    11
+              },
+              {
+                'type': 'Literal',
+                'value': 2,
+                'raw': '2',
+                'range': [
+                  3,
+                  3
                 ],
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 7
-                    },
-                    "end": {
-                        "line": 1,
-                        "column": 12
-                    }
+                'loc': {
+                  'start': {
+                    'line': 1,
+                    'column': 3
+                  },
+                  'end': {
+                    'line': 1,
+                    'column': 4
+                  }
                 }
+              },
+              {
+                'type': 'Literal',
+                'value': 3,
+                'raw': '3',
+                'range': [
+                  6,
+                  6
+                ],
+                'loc': {
+                  'start': {
+                    'line': 1,
+                    'column': 6
+                  },
+                  'end': {
+                    'line': 1,
+                    'column': 7
+                  }
+                }
+              }
+            ],
+            'range': [
+              0,
+              6
+            ],
+            'loc': {
+              'start': {
+                'line': 1,
+                'column': 0
+              },
+              'end': {
+                'line': 1,
+                'column': 7
+              }
             }
-        ],
-        "range": [
+          },
+          'range': [
+            0,
+            6
+          ],
+          'loc': {
+            'start': {
+              'line': 1,
+              'column': 0
+            },
+            'end': {
+              'line': 1,
+              'column': 7
+            }
+          }
+        },
+    '1 + 1, 2 + 2':
+        {
+          'type': 'ExpressionStatement',
+          'expression': {
+            'type': 'SequenceExpression',
+            'expressions': [
+              {
+                'type': 'BinaryExpression',
+                'operator': '+',
+                'left': {
+                  'type': 'Literal',
+                  'value': 1,
+                  'raw': '1',
+                  'range': [
+                    0,
+                    0
+                  ],
+                  'loc': {
+                    'start': {
+                      'line': 1,
+                      'column': 0
+                    },
+                    'end': {
+                      'line': 1,
+                      'column': 1
+                    }
+                  }
+                },
+                'right': {
+                  'type': 'Literal',
+                  'value': 1,
+                  'raw': '1',
+                  'range': [
+                    4,
+                    4
+                  ],
+                  'loc': {
+                    'start': {
+                      'line': 1,
+                      'column': 4
+                    },
+                    'end': {
+                      'line': 1,
+                      'column': 5
+                    }
+                  }
+                },
+                'range': [
+                  0,
+                  4
+                ],
+                'loc': {
+                  'start': {
+                    'line': 1,
+                    'column': 0
+                  },
+                  'end': {
+                    'line': 1,
+                    'column': 5
+                  }
+                }
+              },
+              {
+                'type': 'BinaryExpression',
+                'operator': '+',
+                'left': {
+                  'type': 'Literal',
+                  'value': 2,
+                  'raw': '2',
+                  'range': [
+                    7,
+                    7
+                  ],
+                  'loc': {
+                    'start': {
+                      'line': 1,
+                      'column': 7
+                    },
+                    'end': {
+                      'line': 1,
+                      'column': 8
+                    }
+                  }
+                },
+                'right': {
+                  'type': 'Literal',
+                  'value': 2,
+                  'raw': '2',
+                  'range': [
+                    11,
+                    11
+                  ],
+                  'loc': {
+                    'start': {
+                      'line': 1,
+                      'column': 11
+                    },
+                    'end': {
+                      'line': 1,
+                      'column': 12
+                    }
+                  }
+                },
+                'range': [
+                  7,
+                  11
+                ],
+                'loc': {
+                  'start': {
+                    'line': 1,
+                    'column': 7
+                  },
+                  'end': {
+                    'line': 1,
+                    'column': 12
+                  }
+                }
+              }
+            ],
+            'range': [
+              0,
+              11
+            ],
+            'loc': {
+              'start': {
+                'line': 1,
+                'column': 0
+              },
+              'end': {
+                'line': 1,
+                'column': 12
+              }
+            }
+          },
+          'range': [
             0,
             11
-        ],
-        "loc": {
-            "start": {
-                "line": 1,
-                "column": 0
+          ],
+          'loc': {
+            'start': {
+              'line': 1,
+              'column': 0
             },
-            "end": {
-                "line": 1,
-                "column": 12
+            'end': {
+              'line': 1,
+              'column': 12
             }
+          }
         }
-    },
-    "range": [
-        0,
-        11
-    ],
-    "loc": {
-        "start": {
-            "line": 1,
-            "column": 0
-        },
-        "end": {
-            "line": 1,
-            "column": 12
-        }
-    }
-}
 
-},       
+  },
 
 
   'Assignment Operators': {
@@ -14662,2014 +14756,2014 @@ data = {
           type: 'BlockStatement',
           body: [
             {
-                            type: 'ReturnStatement',
-                            argument: null,
-                            range: [13, 18],
-                            loc: {
-                                start: { line: 1, column: 13 },
-                                end: { line: 1, column: 19 }
-                            }
-                        },
-                        {
-                            type: 'ExpressionStatement',
-                            expression: {
-                                type: 'Identifier',
-                                name: 'x',
-                                range: [20, 20],
-                                loc: {
-                                    start: { line: 2, column: 0 },
-                                    end: { line: 2, column: 1 }
-                                }
-                            },
-                            range: [20, 21],
-                            loc: {
-                                start: { line: 2, column: 0 },
-                                end: { line: 2, column: 2 }
-                            }
-                        }
-                    ],
-                    range: [11, 23],
-                    loc: {
-                        start: { line: 1, column: 11 },
-                        end: { line: 2, column: 4 }
-                    }
-                },
-                range: [0, 24],
-                loc: {
-                    start: { line: 1, column: 0 },
-                    end: { line: 2, column: 5 }
-                }
+              type: 'ReturnStatement',
+              argument: null,
+              range: [13, 18],
+              loc: {
+                start: { line: 1, column: 13 },
+                end: { line: 1, column: 19 }
+              }
             },
-            range: [0, 24],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 5 }
+            {
+              type: 'ExpressionStatement',
+              expression: {
+                type: 'Identifier',
+                name: 'x',
+                range: [20, 20],
+                loc: {
+                  start: { line: 2, column: 0 },
+                  end: { line: 2, column: 1 }
+                }
+              },
+              range: [20, 21],
+              loc: {
+                start: { line: 2, column: 0 },
+                end: { line: 2, column: 2 }
+              }
             }
+          ],
+          range: [11, 23],
+          loc: {
+            start: { line: 1, column: 11 },
+            end: { line: 2, column: 4 }
+          }
         },
-
-        '(function(){ return // Comment\nx; })': {
-            type: 'ExpressionStatement',
-            expression: {
-                type: 'FunctionExpression',
-                id: null,
-                params: [],
-                body: {
-                    type: 'BlockStatement',
-                    body: [
-                        {
-                            type: 'ReturnStatement',
-                            argument: null,
-                            range: [13, 18],
-                            loc: {
-                                start: { line: 1, column: 13 },
-                                end: { line: 1, column: 19 }
-                            }
-                        },
-                        {
-                            type: 'ExpressionStatement',
-                            expression: {
-                                type: 'Identifier',
-                                name: 'x',
-                                range: [31, 31],
-                                loc: {
-                                    start: { line: 2, column: 0 },
-                                    end: { line: 2, column: 1 }
-                                }
-                            },
-                            range: [31, 32],
-                            loc: {
-                                start: { line: 2, column: 0 },
-                                end: { line: 2, column: 2 }
-                            }
-                        }
-                    ],
-                    range: [11, 34],
-                    loc: {
-                        start: { line: 1, column: 11 },
-                        end: { line: 2, column: 4 }
-                    }
-                },
-                range: [0, 35],
-                loc: {
-                    start: { line: 1, column: 0 },
-                    end: { line: 2, column: 5 }
-                }
-            },
-            range: [0, 35],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 5 }
-            }
-        },
-
-        '(function(){ return/* Multiline\nComment */x; })': {
-            type: 'ExpressionStatement',
-            expression: {
-                type: 'FunctionExpression',
-                id: null,
-                params: [],
-                body: {
-                    type: 'BlockStatement',
-                    body: [
-                        {
-                            type: 'ReturnStatement',
-                            argument: null,
-                            range: [13, 18],
-                            loc: {
-                                start: { line: 1, column: 13 },
-                                end: { line: 1, column: 19 }
-                            }
-                        },
-                        {
-                            type: 'ExpressionStatement',
-                            expression: {
-                                type: 'Identifier',
-                                name: 'x',
-                                range: [42, 42],
-                                loc: {
-                                    start: { line: 2, column: 10 },
-                                    end: { line: 2, column: 11 }
-                                }
-                            },
-                            range: [42, 43],
-                            loc: {
-                                start: { line: 2, column: 10 },
-                                end: { line: 2, column: 12 }
-                            }
-                        }
-                    ],
-                    range: [11, 45],
-                    loc: {
-                        start: { line: 1, column: 11 },
-                        end: { line: 2, column: 14 }
-                    }
-                },
-                range: [0, 46],
-                loc: {
-                    start: { line: 1, column: 0 },
-                    end: { line: 2, column: 15 }
-                }
-            },
-            range: [0, 46],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 15 }
-            }
-        },
-
-        '{ throw error\nerror; }': {
-            type: 'BlockStatement',
-            body: [{
-                type: 'ThrowStatement',
-                argument: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [8, 12],
-                    loc: {
-                        start: { line: 1, column: 8 },
-                        end: { line: 1, column: 13 }
-                    }
-                },
-                range: [2, 13],
-                loc: {
-                    start: { line: 1, column: 2 },
-                    end: { line: 2, column: 0 }
-                }
-            }, {
-                type: 'ExpressionStatement',
-                expression: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [14, 18],
-                    loc: {
-                        start: { line: 2, column: 0 },
-                        end: { line: 2, column: 5 }
-                    }
-                },
-                range: [14, 19],
-                loc: {
-                    start: { line: 2, column: 0 },
-                    end: { line: 2, column: 6 }
-                }
-            }],
-            range: [0, 21],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 8 }
-            }
-        },
-
-        '{ throw error// Comment\nerror; }': {
-            type: 'BlockStatement',
-            body: [{
-                type: 'ThrowStatement',
-                argument: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [8, 12],
-                    loc: {
-                        start: { line: 1, column: 8 },
-                        end: { line: 1, column: 13 }
-                    }
-                },
-                range: [2, 23],
-                loc: {
-                    start: { line: 1, column: 2 },
-                    end: { line: 2, column: 0 }
-                }
-            }, {
-                type: 'ExpressionStatement',
-                expression: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [24, 28],
-                    loc: {
-                        start: { line: 2, column: 0 },
-                        end: { line: 2, column: 5 }
-                    }
-                },
-                range: [24, 29],
-                loc: {
-                    start: { line: 2, column: 0 },
-                    end: { line: 2, column: 6 }
-                }
-            }],
-            range: [0, 31],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 8 }
-            }
-        },
-
-        '{ throw error/* Multiline\nComment */error; }': {
-            type: 'BlockStatement',
-            body: [{
-                type: 'ThrowStatement',
-                argument: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [8, 12],
-                    loc: {
-                        start: { line: 1, column: 8 },
-                        end: { line: 1, column: 13 }
-                    }
-                },
-                range: [2, 35],
-                loc: {
-                    start: { line: 1, column: 2 },
-                    end: { line: 2, column: 10 }
-                }
-            }, {
-                type: 'ExpressionStatement',
-                expression: {
-                    type: 'Identifier',
-                    name: 'error',
-                    range: [36, 40],
-                    loc: {
-                        start: { line: 2, column: 10 },
-                        end: { line: 2, column: 15 }
-                    }
-                },
-                range: [36, 41],
-                loc: {
-                    start: { line: 2, column: 10 },
-                    end: { line: 2, column: 16 }
-                }
-            }],
-            range: [0, 43],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 2, column: 18 }
-            }
+        range: [0, 24],
+        loc: {
+          start: { line: 1, column: 0 },
+          end: { line: 2, column: 5 }
         }
-
+      },
+      range: [0, 24],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 5 }
+      }
     },
 
-    'Source elements': {
-
-        '': {
-            type: 'Program',
-            body: [],
-            range: [0, -1],
-            loc: {
-                start: { line: 0, column: 0 },
-                end: { line: 0, column: 0 }
+    '(function(){ return // Comment\nx; })': {
+      type: 'ExpressionStatement',
+      expression: {
+        type: 'FunctionExpression',
+        id: null,
+        params: [],
+        body: {
+          type: 'BlockStatement',
+          body: [
+            {
+              type: 'ReturnStatement',
+              argument: null,
+              range: [13, 18],
+              loc: {
+                start: { line: 1, column: 13 },
+                end: { line: 1, column: 19 }
+              }
             },
-            tokens: []
-        }
-    },
-
-    'Invalid syntax': {
-
-        '{': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '}': {
-            index: 0,
-            lineNumber: 1,
-            column: 1,
-            message: 'Error: Line 1: Unexpected token }'
-        },
-
-        '3ea': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3in []': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3e': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3e+': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3e-': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3x': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3x0': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '0x': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '09': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '018': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '01a': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '3in[]': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '0x3in[]': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '"Hello\nWorld"': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'x\\': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'x\\u005c': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'x\\u002a': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'var x = /(s/g': {
-            index: 13,
-            lineNumber: 1,
-            column: 14,
-            message: 'Error: Line 1: Invalid regular expression'
-        },
-
-        '/': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Invalid regular expression: missing /'
-        },
-
-        'var x = /[a-z]/\\ux': {
-            index: 18,
-            lineNumber: 1,
-            column: 19,
-            message: 'Error: Line 1: Invalid regular expression'
-        },
-
-        '[': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '[,': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '1 + {': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '1 + { t:t ': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '1 + { t:t,': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'var x = /\n/': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Invalid regular expression: missing /'
-        },
-
-        'var x = "\n': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'var if = 42': {
-            index: 4,
-            lineNumber: 1,
-            column: 5,
-            message: 'Error: Line 1: Unexpected token if'
-        },
-
-        'i + 2 = 42': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Invalid left-hand side in assignment'
-        },
-
-        '+i = 42': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Invalid left-hand side in assignment'
-        },
-
-        '1 + (': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        '\n\n\n{': {
-            index: 4,
-            lineNumber: 4,
-            column: 2,
-            message: 'Error: Line 4: Unexpected end of input'
-        },
-
-        '\n/* Some multiline\ncomment */\n)': {
-            index: 30,
-            lineNumber: 4,
-            column: 1,
-            message: 'Error: Line 4: Unexpected token )'
-        },
-
-        '{ set 1 }': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Unexpected number'
-        },
-
-        '{ get 2 }': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Unexpected number'
-        },
-
-        '({ set: s(if) { } })': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Unexpected token if'
-        },
-
-        '({ set s(.) { } })': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token .'
-        },
-
-        '({ set: s() { } })': {
-            index: 12,
-            lineNumber: 1,
-            column: 13,
-            message: 'Error: Line 1: Unexpected token {'
-        },
-
-        '({ set: s(a, b) { } })': {
-            index: 16,
-            lineNumber: 1,
-            column: 17,
-            message: 'Error: Line 1: Unexpected token {'
-        },
-
-        '({ get: g(d) { } })': {
-            index: 13,
-            lineNumber: 1,
-            column: 14,
-            message: 'Error: Line 1: Unexpected token {'
-        },
-
-        '({ get i() { }, i: 42 })': {
-            index: 21,
-            lineNumber: 1,
-            column: 22,
-            message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
-        },
-
-        '({ i: 42, get i() { } })': {
-            index: 21,
-            lineNumber: 1,
-            column: 22,
-            message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
-        },
-
-        '({ set i(x) { }, i: 42 })': {
-            index: 22,
-            lineNumber: 1,
-            column: 23,
-            message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
-        },
-
-        '({ i: 42, set i(x) { } })': {
-            index: 22,
-            lineNumber: 1,
-            column: 23,
-            message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
-        },
-
-        '({ get i() { }, get i() { } })': {
-            index: 27,
-            lineNumber: 1,
-            column: 28,
-            message: 'Error: Line 1: Object literal may not have multiple get/set accessors with the same name'
-        },
-
-        '({ set i(x) { }, set i(x) { } })': {
-            index: 29,
-            lineNumber: 1,
-            column: 30,
-            message: 'Error: Line 1: Object literal may not have multiple get/set accessors with the same name'
-        },
-
-        'function t(if) { }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Unexpected token if'
-        },
-
-        'function t(true) { }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Unexpected token true'
-        },
-
-        'function t(false) { }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Unexpected token false'
-        },
-
-        'function t(null) { }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Unexpected token null'
-        },
-
-        'function null() { }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token null'
-        },
-
-        'function true() { }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token true'
-        },
-
-        'function false() { }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token false'
-        },
-
-        'function if() { }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token if'
-        },
-
-        'a b;': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected identifier'
-        },
-
-        'if.a;': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token .'
-        },
-
-        'a if;': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token if'
-        },
-
-        'a class;': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected reserved word'
-        },
-
-        'break\n': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Illegal break statement'
-        },
-
-        'break 1;': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Unexpected number'
-        },
-
-        'continue\n': {
-            index: 8,
-            lineNumber: 1,
-            column: 9,
-            message: 'Error: Line 1: Illegal continue statement'
-        },
-
-        'continue 2;': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected number'
-        },
-
-        'throw': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'throw;': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Unexpected token ;'
-        },
-
-        'throw\n': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Illegal newline after throw'
-        },
-
-        'for (var i, i2 in {});': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Unexpected token in'
-        },
-
-        'for ((i in {}));': {
-            index: 14,
-            lineNumber: 1,
-            column: 15,
-            message: 'Error: Line 1: Unexpected token )'
-        },
-
-        'for (i + 1 in {});': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Invalid left-hand side in for-in'
-        },
-
-        'for (+i in {});': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Invalid left-hand side in for-in'
-        },
-
-        'if(false)': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'if(false) doThis(); else': {
-            index: 24,
-            lineNumber: 1,
-            column: 25,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'do': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'while(false)': {
-            index: 12,
-            lineNumber: 1,
-            column: 13,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'for(;;)': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'with(x)': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected end of input'
-        },
-
-        'try { }': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Missing catch or finally after try'
-        },
-
-        '\u203F = 10': {
-            index: 0,
-            lineNumber: 1,
-            column: 1,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'const x = 12, y;': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Unexpected token ;'
-        },
-
-        'const x, y = 12;': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ,'
-        },
-
-        'const x;': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ;'
-        },
-
-        'if(true) let a = 1;': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token let'
-        },
-
-        'if(true) const a = 1;': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token const'
-        },
-
-        'new X()."s"': {
-            index: 8,
-            lineNumber: 1,
-            column: 9,
-            message: 'Error: Line 1: Unexpected string'
-        },
-
-        '/*': {
-            index: 2,
-            lineNumber: 1,
-            column: 3,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '/*\n\n\n': {
-            index: 5,
-            lineNumber: 4,
-            column: 1,
-            message: 'Error: Line 4: Unexpected token ILLEGAL'
-        },
-
-        '/**': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '/*\n\n*': {
-            index: 5,
-            lineNumber: 3,
-            column: 2,
-            message: 'Error: Line 3: Unexpected token ILLEGAL'
-        },
-
-        '/*hello': {
-            index: 7,
-            lineNumber: 1,
-            column: 8,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '/*hello  *': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '\n]': {
-            index: 1,
-            lineNumber: 2,
-            column: 1,
-            message: 'Error: Line 2: Unexpected token ]'
-        },
-
-        '\r]': {
-            index: 1,
-            lineNumber: 2,
-            column: 1,
-            message: 'Error: Line 2: Unexpected token ]'
-        },
-
-        '\r\n]': {
-            index: 2,
-            lineNumber: 2,
-            column: 1,
-            message: 'Error: Line 2: Unexpected token ]'
-        },
-
-        '\n\r]': {
-            index: 2,
-            lineNumber: 3,
-            column: 1,
-            message: 'Error: Line 3: Unexpected token ]'
-        },
-
-        '//\r\n]': {
-            index: 4,
-            lineNumber: 2,
-            column: 1,
-            message: 'Error: Line 2: Unexpected token ]'
-        },
-
-        '//\n\r]': {
-            index: 4,
-            lineNumber: 3,
-            column: 1,
-            message: 'Error: Line 3: Unexpected token ]'
-        },
-
-        '//\r \n]': {
-            index: 5,
-            lineNumber: 3,
-            column: 1,
-            message: 'Error: Line 3: Unexpected token ]'
-        },
-
-        '/*\r\n*/]': {
-            index: 6,
-            lineNumber: 2,
-            column: 3,
-            message: 'Error: Line 2: Unexpected token ]'
-        },
-
-        '/*\n\r*/]': {
-            index: 6,
-            lineNumber: 3,
-            column: 3,
-            message: 'Error: Line 3: Unexpected token ]'
-        },
-
-        '/*\r \n*/]': {
-            index: 7,
-            lineNumber: 3,
-            column: 3,
-            message: 'Error: Line 3: Unexpected token ]'
-        },
-
-        '\\\\': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '\\u005c': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-
-        '\\x': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '\\u0000': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '\u200C = []': {
-            index: 0,
-            lineNumber: 1,
-            column: 1,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '\u200D = []': {
-            index: 0,
-            lineNumber: 1,
-            column: 1,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '"\\': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        '"\\u': {
-            index: 3,
-            lineNumber: 1,
-            column: 4,
-            message: 'Error: Line 1: Unexpected token ILLEGAL'
-        },
-
-        'return': {
-            index: 6,
-            lineNumber: 1,
-            column: 7,
-            message: 'Error: Line 1: Illegal return statement'
-        },
-
-        'break': {
-            index: 5,
-            lineNumber: 1,
-            column: 6,
-            message: 'Error: Line 1: Illegal break statement'
-        },
-
-        'continue': {
-            index: 8,
-            lineNumber: 1,
-            column: 9,
-            message: 'Error: Line 1: Illegal continue statement'
-        },
-
-        'switch (x) { default: continue; }': {
-            index: 31,
-            lineNumber: 1,
-            column: 32,
-            message: 'Error: Line 1: Illegal continue statement'
-        },
-
-        'do { x } *': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Unexpected token *'
-        },
-
-        'while (true) { break x; }': {
-            index: 22,
-            lineNumber: 1,
-            column: 23,
-            message: 'Error: Line 1: Undefined label \'x\''
-        },
-
-        'while (true) { continue x; }': {
-            index: 25,
-            lineNumber: 1,
-            column: 26,
-            message: 'Error: Line 1: Undefined label \'x\''
-        },
-
-        'x: while (true) { (function () { break x; }); }': {
-            index: 40,
-            lineNumber: 1,
-            column: 41,
-            message: 'Error: Line 1: Undefined label \'x\''
-        },
-
-        'x: while (true) { (function () { continue x; }); }': {
-            index: 43,
-            lineNumber: 1,
-            column: 44,
-            message: 'Error: Line 1: Undefined label \'x\''
-        },
-
-        'x: while (true) { (function () { break; }); }': {
-            index: 39,
-            lineNumber: 1,
-            column: 40,
-            message: 'Error: Line 1: Illegal break statement'
-        },
-
-        'x: while (true) { (function () { continue; }); }': {
-            index: 42,
-            lineNumber: 1,
-            column: 43,
-            message: 'Error: Line 1: Illegal continue statement'
-        },
-
-        'x: while (true) { x: while (true) { } }': {
-            index: 20,
-            lineNumber: 1,
-            column: 21,
-            message: 'Error: Line 1: Label \'x\' has already been declared'
-        },
-
-        '(function () { \'use strict\'; delete i; }())': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Delete of an unqualified identifier in strict mode.'
-        },
-
-        '(function () { \'use strict\'; with (i); }())': {
-            index: 28,
-            lineNumber: 1,
-            column: 29,
-            message: 'Error: Line 1: Strict mode code may not include a with statement'
-        },
-
-        'function hello() {\'use strict\'; ({ i: 42, i: 42 }) }': {
-            index: 47,
-            lineNumber: 1,
-            column: 48,
-            message: 'Error: Line 1: Duplicate data property in object literal not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ({ hasOwnProperty: 42, hasOwnProperty: 42 }) }': {
-            index: 73,
-            lineNumber: 1,
-            column: 74,
-            message: 'Error: Line 1: Duplicate data property in object literal not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; var eval = 10; }': {
-            index: 40,
-            lineNumber: 1,
-            column: 41,
-            message: 'Error: Line 1: Variable name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; var arguments = 10; }': {
-            index: 45,
-            lineNumber: 1,
-            column: 46,
-            message: 'Error: Line 1: Variable name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; try { } catch (eval) { } }': {
-            index: 51,
-            lineNumber: 1,
-            column: 52,
-            message: 'Error: Line 1: Catch variable may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; try { } catch (arguments) { } }': {
-            index: 56,
-            lineNumber: 1,
-            column: 57,
-            message: 'Error: Line 1: Catch variable may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; eval = 10; }': {
-            index: 36,
-            lineNumber: 1,
-            column: 37,
-            message: 'Error: Line 1: Assignment to eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; arguments = 10; }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Assignment to eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ++eval; }': {
-            index: 38,
-            lineNumber: 1,
-            column: 39,
-            message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; --eval; }': {
-            index: 38,
-            lineNumber: 1,
-            column: 39,
-            message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ++arguments; }': {
-            index: 43,
-            lineNumber: 1,
-            column: 44,
-            message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; --arguments; }': {
-            index: 43,
-            lineNumber: 1,
-            column: 44,
-            message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; eval++; }': {
-            index: 36,
-            lineNumber: 1,
-            column: 37,
-            message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; eval--; }': {
-            index: 36,
-            lineNumber: 1,
-            column: 37,
-            message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; arguments++; }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; arguments--; }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
-        },
-
-        'function hello() {\'use strict\'; function eval() { } }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; function arguments() { } }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function eval() {\'use strict\'; }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function arguments() {\'use strict\'; }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; (function eval() { }()) }': {
-            index: 42,
-            lineNumber: 1,
-            column: 43,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; (function arguments() { }()) }': {
-            index: 42,
-            lineNumber: 1,
-            column: 43,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        '(function eval() {\'use strict\'; })()': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        '(function arguments() {\'use strict\'; })()': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ({ s: function eval() { } }); }': {
-            index: 47,
-            lineNumber: 1,
-            column: 48,
-            message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
-        },
-
-        '(function package() {\'use strict\'; })()': {
-            index: 10,
-            lineNumber: 1,
-            column: 11,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ({ i: 10, set s(eval) { } }); }': {
-            index: 48,
-            lineNumber: 1,
-            column: 49,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ({ set s(eval) { } }); }': {
-            index: 41,
-            lineNumber: 1,
-            column: 42,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() {\'use strict\'; ({ s: function s(eval) { } }); }': {
-            index: 49,
-            lineNumber: 1,
-            column: 50,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello(eval) {\'use strict\';}': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello(arguments) {\'use strict\';}': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() { \'use strict\'; function inner(eval) {} }': {
-            index: 48,
-            lineNumber: 1,
-            column: 49,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function hello() { \'use strict\'; function inner(arguments) {} }': {
-            index: 48,
-            lineNumber: 1,
-            column: 49,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        ' "\\1"; \'use strict\';': {
-            index: 1,
-            lineNumber: 1,
-            column: 2,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { \'use strict\'; "\\1"; }': {
-            index: 33,
-            lineNumber: 1,
-            column: 34,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { \'use strict\'; 021; }': {
-            index: 33,
-            lineNumber: 1,
-            column: 34,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { \'use strict\'; ({ "\\1": 42 }); }': {
-            index: 36,
-            lineNumber: 1,
-            column: 37,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { \'use strict\'; ({ 021: 42 }); }': {
-            index: 36,
-            lineNumber: 1,
-            column: 37,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { "octal directive\\1"; "use strict"; }': {
-            index: 19,
-            lineNumber: 1,
-            column: 20,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { "octal directive\\1"; "octal directive\\2"; "use strict"; }': {
-            index: 19,
-            lineNumber: 1,
-            column: 20,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { "use strict"; function inner() { "octal directive\\1"; } }': {
-            index: 52,
-            lineNumber: 1,
-            column: 53,
-            message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
-        },
-
-        'function hello() { "use strict"; var implements; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var interface; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var package; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var private; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var protected; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var public; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var static; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var yield; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello() { "use strict"; var let; }': {
-            index: 37,
-            lineNumber: 1,
-            column: 38,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function hello(static) { "use strict"; }': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function static() { "use strict"; }': {
-            index: 9,
-            lineNumber: 1,
-            column: 10,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'var yield': {
-            index: 4,
-            lineNumber: 1,
-            column: 5,
-            message: 'Error: Line 1: Unexpected token yield'
-        },
-
-        'var let': {
-            index: 4,
-            lineNumber: 1,
-            column: 5,
-            message: 'Error: Line 1: Unexpected token let'
-        },
-
-        '"use strict"; function static() { }': {
-            index: 23,
-            lineNumber: 1,
-            column: 24,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function a(t, t) { "use strict"; }': {
-            index: 14,
-            lineNumber: 1,
-            column: 15,
-            message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
-        },
-
-        'function a(eval) { "use strict"; }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        'function a(package) { "use strict"; }': {
-            index: 11,
-            lineNumber: 1,
-            column: 12,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        },
-
-        'function a() { "use strict"; function b(t, t) { }; }': {
-            index: 43,
-            lineNumber: 1,
-            column: 44,
-            message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
-        },
-
-        '(function a(t, t) { "use strict"; })': {
-            index: 15,
-            lineNumber: 1,
-            column: 16,
-            message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
-        },
-
-        'function a() { "use strict"; (function b(t, t) { }); }': {
-            index: 44,
-            lineNumber: 1,
-            column: 45,
-            message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
-        },
-
-        '(function a(eval) { "use strict"; })': {
-            index: 12,
-            lineNumber: 1,
-            column: 13,
-            message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
-        },
-
-        '(function a(package) { "use strict"; })': {
-            index: 12,
-            lineNumber: 1,
-            column: 13,
-            message: 'Error: Line 1: Use of future reserved word in strict mode'
-        }
-
-    },
-
-    'API': {
-        'parse()': {
-            call: 'parse',
-            args: [],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Identifier',
-                        name: 'undefined'
-                    }
-                }]
-            }
-        },
-
-        'parse(null)': {
-            call: 'parse',
-            args: [null],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Literal',
-                        value: null
-                    }
-                }]
-            }
-        },
-
-        'parse(42)': {
-            call: 'parse',
-            args: [42],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Literal',
-                        value: 42
-                    }
-                }]
-            }
-        },
-
-        'parse(true)': {
-            call: 'parse',
-            args: [true],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Literal',
-                        value: true
-                    }
-                }]
-            }
-        },
-
-        'parse(undefined)': {
-            call: 'parse',
-            args: [void 0],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Identifier',
-                        name: 'undefined'
-                    }
-                }]
-            }
-        },
-
-        'parse(new String("test"))': {
-            call: 'parse',
-            args: [new String('test')],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Identifier',
-                        name: 'test'
-                    }
-                }]
-            }
-        },
-
-        'parse(new Number(42))': {
-            call: 'parse',
-            args: [new Number(42)],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Literal',
-                        value: 42
-                    }
-                }]
-            }
-        },
-
-        'parse(new Boolean(true))': {
-            call: 'parse',
-            args: [new Boolean(true)],
-            result: {
-                type: 'Program',
-                body: [{
-                    type: 'ExpressionStatement',
-                    expression: {
-                        type: 'Literal',
-                        value: true
-                    }
-                }]
-            }
-        }
-
-    },
-
-    'Tolerant parse': {
-        'return': {
-            type: 'Program',
-            body: [{
-                type: 'ReturnStatement',
-                'argument': null,
-                range: [0, 5],
+            {
+              type: 'ExpressionStatement',
+              expression: {
+                type: 'Identifier',
+                name: 'x',
+                range: [31, 31],
                 loc: {
-                    start: { line: 1, column: 0 },
-                    end: { line: 1, column: 6 }
+                  start: { line: 2, column: 0 },
+                  end: { line: 2, column: 1 }
                 }
-            }],
-            range: [0, 5],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 1, column: 6 }
-            },
-            errors: [{
-                index: 6,
-                lineNumber: 1,
-                column: 7,
-                message: 'Error: Line 1: Illegal return statement'
-            }]
+              },
+              range: [31, 32],
+              loc: {
+                start: { line: 2, column: 0 },
+                end: { line: 2, column: 2 }
+              }
+            }
+          ],
+          range: [11, 34],
+          loc: {
+            start: { line: 1, column: 11 },
+            end: { line: 2, column: 4 }
+          }
         },
-
-        '(function () { \'use strict\'; with (i); }())': {
-            type: 'Program',
-            body: [{
-                  type: 'ExpressionStatement',
-                  expression: {
-                      type: 'CallExpression',
-                      callee: {
-                          type: 'FunctionExpression',
-                          id: null,
-                          params: [],
-                          body: {
-                              type: 'BlockStatement',
-                              body: [{
-                                  type: 'ExpressionStatement',
-                                  expression: {
-                                      type: 'Literal',
-                                      value: 'use strict',
-                                      raw: '\'use strict\'',
-                                      range: [15, 26],
-                                      loc: {
-                                          start: { line: 1, column: 15 },
-                                          end: { line: 1, column: 27 }
-                                      }
-                                  },
-                                  range: [15, 27],
-                                  loc: {
-                                      start: { line: 1, column: 15 },
-                                      end: { line: 1, column: 28 }
-                                  }
-                              }, {
-                                  type: 'WithStatement',
-                                  object: {
-                                      type: 'Identifier',
-                                      name: 'i',
-                                      range: [35, 35],
-                                      loc: {
-                                          start: { line: 1, column: 35 },
-                                          end: { line: 1, column: 36 }
-                                      }
-                                  },
-                                  body: {
-                                      type: 'EmptyStatement',
-                                      range: [37, 37],
-                                      loc: {
-                                          start: { line: 1, column: 37 },
-                                          end: { line: 1, column: 38 }
-                                      }
-                                  },
-                                  range: [29, 37],
-                                  loc: {
-                                      start: { line: 1, column: 29 },
-                                      end: { line: 1, column: 38 }
-                                  }
-                              }],
-                              range: [13, 39],
-                              loc: {
-                                  start: { line: 1, column: 13 },
-                                  end: { line: 1, column: 40 }
-                              }
-                          },
-                          range: [1, 39],
-                          loc: {
-                              start: { line: 1, column: 1 },
-                              end: { line: 1, column: 40 }
-                          }
-                      },
-                      'arguments': [],
-                      range: [0, 42],
-                      loc: {
-                          start: { line: 1, column: 0 },
-                          end: { line: 1, column: 43 }
-                      }
-                  },
-                  range: [0, 42],
-                  loc: {
-                      start: { line: 1, column: 0 },
-                      end: { line: 1, column: 43 }
-                  }
-            }],
-            range: [0, 42],
-            loc: {
-                start: { line: 1, column: 0 },
-                end: { line: 1, column: 43 }
-            },
-            errors: [{
-                index: 29,
-                lineNumber: 1,
-                column: 30,
-                message: 'Error: Line 1: Strict mode code may not include a with statement'
-            }]
+        range: [0, 35],
+        loc: {
+          start: { line: 1, column: 0 },
+          end: { line: 2, column: 5 }
         }
+      },
+      range: [0, 35],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 5 }
+      }
+    },
 
+    '(function(){ return/* Multiline\nComment */x; })': {
+      type: 'ExpressionStatement',
+      expression: {
+        type: 'FunctionExpression',
+        id: null,
+        params: [],
+        body: {
+          type: 'BlockStatement',
+          body: [
+            {
+              type: 'ReturnStatement',
+              argument: null,
+              range: [13, 18],
+              loc: {
+                start: { line: 1, column: 13 },
+                end: { line: 1, column: 19 }
+              }
+            },
+            {
+              type: 'ExpressionStatement',
+              expression: {
+                type: 'Identifier',
+                name: 'x',
+                range: [42, 42],
+                loc: {
+                  start: { line: 2, column: 10 },
+                  end: { line: 2, column: 11 }
+                }
+              },
+              range: [42, 43],
+              loc: {
+                start: { line: 2, column: 10 },
+                end: { line: 2, column: 12 }
+              }
+            }
+          ],
+          range: [11, 45],
+          loc: {
+            start: { line: 1, column: 11 },
+            end: { line: 2, column: 14 }
+          }
+        },
+        range: [0, 46],
+        loc: {
+          start: { line: 1, column: 0 },
+          end: { line: 2, column: 15 }
+        }
+      },
+      range: [0, 46],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 15 }
+      }
+    },
+
+    '{ throw error\nerror; }': {
+      type: 'BlockStatement',
+      body: [{
+        type: 'ThrowStatement',
+        argument: {
+          type: 'Identifier',
+          name: 'error',
+          range: [8, 12],
+          loc: {
+            start: { line: 1, column: 8 },
+            end: { line: 1, column: 13 }
+          }
+        },
+        range: [2, 13],
+        loc: {
+          start: { line: 1, column: 2 },
+          end: { line: 2, column: 0 }
+        }
+      }, {
+        type: 'ExpressionStatement',
+        expression: {
+          type: 'Identifier',
+          name: 'error',
+          range: [14, 18],
+          loc: {
+            start: { line: 2, column: 0 },
+            end: { line: 2, column: 5 }
+          }
+        },
+        range: [14, 19],
+        loc: {
+          start: { line: 2, column: 0 },
+          end: { line: 2, column: 6 }
+        }
+      }],
+      range: [0, 21],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 8 }
+      }
+    },
+
+    '{ throw error// Comment\nerror; }': {
+      type: 'BlockStatement',
+      body: [{
+        type: 'ThrowStatement',
+        argument: {
+          type: 'Identifier',
+          name: 'error',
+          range: [8, 12],
+          loc: {
+            start: { line: 1, column: 8 },
+            end: { line: 1, column: 13 }
+          }
+        },
+        range: [2, 23],
+        loc: {
+          start: { line: 1, column: 2 },
+          end: { line: 2, column: 0 }
+        }
+      }, {
+        type: 'ExpressionStatement',
+        expression: {
+          type: 'Identifier',
+          name: 'error',
+          range: [24, 28],
+          loc: {
+            start: { line: 2, column: 0 },
+            end: { line: 2, column: 5 }
+          }
+        },
+        range: [24, 29],
+        loc: {
+          start: { line: 2, column: 0 },
+          end: { line: 2, column: 6 }
+        }
+      }],
+      range: [0, 31],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 8 }
+      }
+    },
+
+    '{ throw error/* Multiline\nComment */error; }': {
+      type: 'BlockStatement',
+      body: [{
+        type: 'ThrowStatement',
+        argument: {
+          type: 'Identifier',
+          name: 'error',
+          range: [8, 12],
+          loc: {
+            start: { line: 1, column: 8 },
+            end: { line: 1, column: 13 }
+          }
+        },
+        range: [2, 35],
+        loc: {
+          start: { line: 1, column: 2 },
+          end: { line: 2, column: 10 }
+        }
+      }, {
+        type: 'ExpressionStatement',
+        expression: {
+          type: 'Identifier',
+          name: 'error',
+          range: [36, 40],
+          loc: {
+            start: { line: 2, column: 10 },
+            end: { line: 2, column: 15 }
+          }
+        },
+        range: [36, 41],
+        loc: {
+          start: { line: 2, column: 10 },
+          end: { line: 2, column: 16 }
+        }
+      }],
+      range: [0, 43],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 2, column: 18 }
+      }
     }
+
+  },
+
+  'Source elements': {
+
+    '': {
+      type: 'Program',
+      body: [],
+      range: [0, -1],
+      loc: {
+        start: { line: 0, column: 0 },
+        end: { line: 0, column: 0 }
+      },
+      tokens: []
+    }
+  },
+
+  'Invalid syntax': {
+
+    '{': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '}': {
+      index: 0,
+      lineNumber: 1,
+      column: 1,
+      message: 'Error: Line 1: Unexpected token }'
+    },
+
+    '3ea': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3in []': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3e': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3e+': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3e-': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3x': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3x0': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '0x': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '09': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '018': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '01a': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '3in[]': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '0x3in[]': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '"Hello\nWorld"': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'x\\': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'x\\u005c': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'x\\u002a': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'var x = /(s/g': {
+      index: 13,
+      lineNumber: 1,
+      column: 14,
+      message: 'Error: Line 1: Invalid regular expression'
+    },
+
+    '/': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Invalid regular expression: missing /'
+    },
+
+    'var x = /[a-z]/\\ux': {
+      index: 18,
+      lineNumber: 1,
+      column: 19,
+      message: 'Error: Line 1: Invalid regular expression'
+    },
+
+    '[': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '[,': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '1 + {': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '1 + { t:t ': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '1 + { t:t,': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'var x = /\n/': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Invalid regular expression: missing /'
+    },
+
+    'var x = "\n': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'var if = 42': {
+      index: 4,
+      lineNumber: 1,
+      column: 5,
+      message: 'Error: Line 1: Unexpected token if'
+    },
+
+    'i + 2 = 42': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Invalid left-hand side in assignment'
+    },
+
+    '+i = 42': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Invalid left-hand side in assignment'
+    },
+
+    '1 + (': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    '\n\n\n{': {
+      index: 4,
+      lineNumber: 4,
+      column: 2,
+      message: 'Error: Line 4: Unexpected end of input'
+    },
+
+    '\n/* Some multiline\ncomment */\n)': {
+      index: 30,
+      lineNumber: 4,
+      column: 1,
+      message: 'Error: Line 4: Unexpected token )'
+    },
+
+    '{ set 1 }': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Unexpected number'
+    },
+
+    '{ get 2 }': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Unexpected number'
+    },
+
+    '({ set: s(if) { } })': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Unexpected token if'
+    },
+
+    '({ set s(.) { } })': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token .'
+    },
+
+    '({ set: s() { } })': {
+      index: 12,
+      lineNumber: 1,
+      column: 13,
+      message: 'Error: Line 1: Unexpected token {'
+    },
+
+    '({ set: s(a, b) { } })': {
+      index: 16,
+      lineNumber: 1,
+      column: 17,
+      message: 'Error: Line 1: Unexpected token {'
+    },
+
+    '({ get: g(d) { } })': {
+      index: 13,
+      lineNumber: 1,
+      column: 14,
+      message: 'Error: Line 1: Unexpected token {'
+    },
+
+    '({ get i() { }, i: 42 })': {
+      index: 21,
+      lineNumber: 1,
+      column: 22,
+      message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
+    },
+
+    '({ i: 42, get i() { } })': {
+      index: 21,
+      lineNumber: 1,
+      column: 22,
+      message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
+    },
+
+    '({ set i(x) { }, i: 42 })': {
+      index: 22,
+      lineNumber: 1,
+      column: 23,
+      message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
+    },
+
+    '({ i: 42, set i(x) { } })': {
+      index: 22,
+      lineNumber: 1,
+      column: 23,
+      message: 'Error: Line 1: Object literal may not have data and accessor property with the same name'
+    },
+
+    '({ get i() { }, get i() { } })': {
+      index: 27,
+      lineNumber: 1,
+      column: 28,
+      message: 'Error: Line 1: Object literal may not have multiple get/set accessors with the same name'
+    },
+
+    '({ set i(x) { }, set i(x) { } })': {
+      index: 29,
+      lineNumber: 1,
+      column: 30,
+      message: 'Error: Line 1: Object literal may not have multiple get/set accessors with the same name'
+    },
+
+    'function t(if) { }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Unexpected token if'
+    },
+
+    'function t(true) { }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Unexpected token true'
+    },
+
+    'function t(false) { }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Unexpected token false'
+    },
+
+    'function t(null) { }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Unexpected token null'
+    },
+
+    'function null() { }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token null'
+    },
+
+    'function true() { }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token true'
+    },
+
+    'function false() { }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token false'
+    },
+
+    'function if() { }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token if'
+    },
+
+    'a b;': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected identifier'
+    },
+
+    'if.a;': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token .'
+    },
+
+    'a if;': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token if'
+    },
+
+    'a class;': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected reserved word'
+    },
+
+    'break\n': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Illegal break statement'
+    },
+
+    'break 1;': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Unexpected number'
+    },
+
+    'continue\n': {
+      index: 8,
+      lineNumber: 1,
+      column: 9,
+      message: 'Error: Line 1: Illegal continue statement'
+    },
+
+    'continue 2;': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected number'
+    },
+
+    'throw': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'throw;': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Unexpected token ;'
+    },
+
+    'throw\n': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Illegal newline after throw'
+    },
+
+    'for (var i, i2 in {});': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Unexpected token in'
+    },
+
+    'for ((i in {}));': {
+      index: 14,
+      lineNumber: 1,
+      column: 15,
+      message: 'Error: Line 1: Unexpected token )'
+    },
+
+    'for (i + 1 in {});': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Invalid left-hand side in for-in'
+    },
+
+    'for (+i in {});': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Invalid left-hand side in for-in'
+    },
+
+    'if(false)': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'if(false) doThis(); else': {
+      index: 24,
+      lineNumber: 1,
+      column: 25,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'do': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'while(false)': {
+      index: 12,
+      lineNumber: 1,
+      column: 13,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'for(;;)': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'with(x)': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected end of input'
+    },
+
+    'try { }': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Missing catch or finally after try'
+    },
+
+    '\u203F = 10': {
+      index: 0,
+      lineNumber: 1,
+      column: 1,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'const x = 12, y;': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Unexpected token ;'
+    },
+
+    'const x, y = 12;': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ,'
+    },
+
+    'const x;': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ;'
+    },
+
+    'if(true) let a = 1;': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token let'
+    },
+
+    'if(true) const a = 1;': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token const'
+    },
+
+    'new X()."s"': {
+      index: 8,
+      lineNumber: 1,
+      column: 9,
+      message: 'Error: Line 1: Unexpected string'
+    },
+
+    '/*': {
+      index: 2,
+      lineNumber: 1,
+      column: 3,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '/*\n\n\n': {
+      index: 5,
+      lineNumber: 4,
+      column: 1,
+      message: 'Error: Line 4: Unexpected token ILLEGAL'
+    },
+
+    '/**': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '/*\n\n*': {
+      index: 5,
+      lineNumber: 3,
+      column: 2,
+      message: 'Error: Line 3: Unexpected token ILLEGAL'
+    },
+
+    '/*hello': {
+      index: 7,
+      lineNumber: 1,
+      column: 8,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '/*hello  *': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '\n]': {
+      index: 1,
+      lineNumber: 2,
+      column: 1,
+      message: 'Error: Line 2: Unexpected token ]'
+    },
+
+    '\r]': {
+      index: 1,
+      lineNumber: 2,
+      column: 1,
+      message: 'Error: Line 2: Unexpected token ]'
+    },
+
+    '\r\n]': {
+      index: 2,
+      lineNumber: 2,
+      column: 1,
+      message: 'Error: Line 2: Unexpected token ]'
+    },
+
+    '\n\r]': {
+      index: 2,
+      lineNumber: 3,
+      column: 1,
+      message: 'Error: Line 3: Unexpected token ]'
+    },
+
+    '//\r\n]': {
+      index: 4,
+      lineNumber: 2,
+      column: 1,
+      message: 'Error: Line 2: Unexpected token ]'
+    },
+
+    '//\n\r]': {
+      index: 4,
+      lineNumber: 3,
+      column: 1,
+      message: 'Error: Line 3: Unexpected token ]'
+    },
+
+    '//\r \n]': {
+      index: 5,
+      lineNumber: 3,
+      column: 1,
+      message: 'Error: Line 3: Unexpected token ]'
+    },
+
+    '/*\r\n*/]': {
+      index: 6,
+      lineNumber: 2,
+      column: 3,
+      message: 'Error: Line 2: Unexpected token ]'
+    },
+
+    '/*\n\r*/]': {
+      index: 6,
+      lineNumber: 3,
+      column: 3,
+      message: 'Error: Line 3: Unexpected token ]'
+    },
+
+    '/*\r \n*/]': {
+      index: 7,
+      lineNumber: 3,
+      column: 3,
+      message: 'Error: Line 3: Unexpected token ]'
+    },
+
+    '\\\\': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '\\u005c': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+
+    '\\x': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '\\u0000': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '\u200C = []': {
+      index: 0,
+      lineNumber: 1,
+      column: 1,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '\u200D = []': {
+      index: 0,
+      lineNumber: 1,
+      column: 1,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '"\\': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    '"\\u': {
+      index: 3,
+      lineNumber: 1,
+      column: 4,
+      message: 'Error: Line 1: Unexpected token ILLEGAL'
+    },
+
+    'return': {
+      index: 6,
+      lineNumber: 1,
+      column: 7,
+      message: 'Error: Line 1: Illegal return statement'
+    },
+
+    'break': {
+      index: 5,
+      lineNumber: 1,
+      column: 6,
+      message: 'Error: Line 1: Illegal break statement'
+    },
+
+    'continue': {
+      index: 8,
+      lineNumber: 1,
+      column: 9,
+      message: 'Error: Line 1: Illegal continue statement'
+    },
+
+    'switch (x) { default: continue; }': {
+      index: 31,
+      lineNumber: 1,
+      column: 32,
+      message: 'Error: Line 1: Illegal continue statement'
+    },
+
+    'do { x } *': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Unexpected token *'
+    },
+
+    'while (true) { break x; }': {
+      index: 22,
+      lineNumber: 1,
+      column: 23,
+      message: 'Error: Line 1: Undefined label \'x\''
+    },
+
+    'while (true) { continue x; }': {
+      index: 25,
+      lineNumber: 1,
+      column: 26,
+      message: 'Error: Line 1: Undefined label \'x\''
+    },
+
+    'x: while (true) { (function () { break x; }); }': {
+      index: 40,
+      lineNumber: 1,
+      column: 41,
+      message: 'Error: Line 1: Undefined label \'x\''
+    },
+
+    'x: while (true) { (function () { continue x; }); }': {
+      index: 43,
+      lineNumber: 1,
+      column: 44,
+      message: 'Error: Line 1: Undefined label \'x\''
+    },
+
+    'x: while (true) { (function () { break; }); }': {
+      index: 39,
+      lineNumber: 1,
+      column: 40,
+      message: 'Error: Line 1: Illegal break statement'
+    },
+
+    'x: while (true) { (function () { continue; }); }': {
+      index: 42,
+      lineNumber: 1,
+      column: 43,
+      message: 'Error: Line 1: Illegal continue statement'
+    },
+
+    'x: while (true) { x: while (true) { } }': {
+      index: 20,
+      lineNumber: 1,
+      column: 21,
+      message: 'Error: Line 1: Label \'x\' has already been declared'
+    },
+
+    '(function () { \'use strict\'; delete i; }())': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Delete of an unqualified identifier in strict mode.'
+    },
+
+    '(function () { \'use strict\'; with (i); }())': {
+      index: 28,
+      lineNumber: 1,
+      column: 29,
+      message: 'Error: Line 1: Strict mode code may not include a with statement'
+    },
+
+    'function hello() {\'use strict\'; ({ i: 42, i: 42 }) }': {
+      index: 47,
+      lineNumber: 1,
+      column: 48,
+      message: 'Error: Line 1: Duplicate data property in object literal not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ({ hasOwnProperty: 42, hasOwnProperty: 42 }) }': {
+      index: 73,
+      lineNumber: 1,
+      column: 74,
+      message: 'Error: Line 1: Duplicate data property in object literal not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; var eval = 10; }': {
+      index: 40,
+      lineNumber: 1,
+      column: 41,
+      message: 'Error: Line 1: Variable name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; var arguments = 10; }': {
+      index: 45,
+      lineNumber: 1,
+      column: 46,
+      message: 'Error: Line 1: Variable name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; try { } catch (eval) { } }': {
+      index: 51,
+      lineNumber: 1,
+      column: 52,
+      message: 'Error: Line 1: Catch variable may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; try { } catch (arguments) { } }': {
+      index: 56,
+      lineNumber: 1,
+      column: 57,
+      message: 'Error: Line 1: Catch variable may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; eval = 10; }': {
+      index: 36,
+      lineNumber: 1,
+      column: 37,
+      message: 'Error: Line 1: Assignment to eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; arguments = 10; }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Assignment to eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ++eval; }': {
+      index: 38,
+      lineNumber: 1,
+      column: 39,
+      message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; --eval; }': {
+      index: 38,
+      lineNumber: 1,
+      column: 39,
+      message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ++arguments; }': {
+      index: 43,
+      lineNumber: 1,
+      column: 44,
+      message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; --arguments; }': {
+      index: 43,
+      lineNumber: 1,
+      column: 44,
+      message: 'Error: Line 1: Prefix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; eval++; }': {
+      index: 36,
+      lineNumber: 1,
+      column: 37,
+      message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; eval--; }': {
+      index: 36,
+      lineNumber: 1,
+      column: 37,
+      message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; arguments++; }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; arguments--; }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Postfix increment/decrement may not have eval or arguments operand in strict mode'
+    },
+
+    'function hello() {\'use strict\'; function eval() { } }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; function arguments() { } }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function eval() {\'use strict\'; }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function arguments() {\'use strict\'; }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; (function eval() { }()) }': {
+      index: 42,
+      lineNumber: 1,
+      column: 43,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; (function arguments() { }()) }': {
+      index: 42,
+      lineNumber: 1,
+      column: 43,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    '(function eval() {\'use strict\'; })()': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    '(function arguments() {\'use strict\'; })()': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ({ s: function eval() { } }); }': {
+      index: 47,
+      lineNumber: 1,
+      column: 48,
+      message: 'Error: Line 1: Function name may not be eval or arguments in strict mode'
+    },
+
+    '(function package() {\'use strict\'; })()': {
+      index: 10,
+      lineNumber: 1,
+      column: 11,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ({ i: 10, set s(eval) { } }); }': {
+      index: 48,
+      lineNumber: 1,
+      column: 49,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ({ set s(eval) { } }); }': {
+      index: 41,
+      lineNumber: 1,
+      column: 42,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() {\'use strict\'; ({ s: function s(eval) { } }); }': {
+      index: 49,
+      lineNumber: 1,
+      column: 50,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello(eval) {\'use strict\';}': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello(arguments) {\'use strict\';}': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() { \'use strict\'; function inner(eval) {} }': {
+      index: 48,
+      lineNumber: 1,
+      column: 49,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function hello() { \'use strict\'; function inner(arguments) {} }': {
+      index: 48,
+      lineNumber: 1,
+      column: 49,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    ' "\\1"; \'use strict\';': {
+      index: 1,
+      lineNumber: 1,
+      column: 2,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { \'use strict\'; "\\1"; }': {
+      index: 33,
+      lineNumber: 1,
+      column: 34,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { \'use strict\'; 021; }': {
+      index: 33,
+      lineNumber: 1,
+      column: 34,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { \'use strict\'; ({ "\\1": 42 }); }': {
+      index: 36,
+      lineNumber: 1,
+      column: 37,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { \'use strict\'; ({ 021: 42 }); }': {
+      index: 36,
+      lineNumber: 1,
+      column: 37,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { "octal directive\\1"; "use strict"; }': {
+      index: 19,
+      lineNumber: 1,
+      column: 20,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { "octal directive\\1"; "octal directive\\2"; "use strict"; }': {
+      index: 19,
+      lineNumber: 1,
+      column: 20,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { "use strict"; function inner() { "octal directive\\1"; } }': {
+      index: 52,
+      lineNumber: 1,
+      column: 53,
+      message: 'Error: Line 1: Octal literals are not allowed in strict mode.'
+    },
+
+    'function hello() { "use strict"; var implements; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var interface; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var package; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var private; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var protected; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var public; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var static; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var yield; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello() { "use strict"; var let; }': {
+      index: 37,
+      lineNumber: 1,
+      column: 38,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function hello(static) { "use strict"; }': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function static() { "use strict"; }': {
+      index: 9,
+      lineNumber: 1,
+      column: 10,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'var yield': {
+      index: 4,
+      lineNumber: 1,
+      column: 5,
+      message: 'Error: Line 1: Unexpected token yield'
+    },
+
+    'var let': {
+      index: 4,
+      lineNumber: 1,
+      column: 5,
+      message: 'Error: Line 1: Unexpected token let'
+    },
+
+    '"use strict"; function static() { }': {
+      index: 23,
+      lineNumber: 1,
+      column: 24,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function a(t, t) { "use strict"; }': {
+      index: 14,
+      lineNumber: 1,
+      column: 15,
+      message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
+    },
+
+    'function a(eval) { "use strict"; }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    'function a(package) { "use strict"; }': {
+      index: 11,
+      lineNumber: 1,
+      column: 12,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    },
+
+    'function a() { "use strict"; function b(t, t) { }; }': {
+      index: 43,
+      lineNumber: 1,
+      column: 44,
+      message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
+    },
+
+    '(function a(t, t) { "use strict"; })': {
+      index: 15,
+      lineNumber: 1,
+      column: 16,
+      message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
+    },
+
+    'function a() { "use strict"; (function b(t, t) { }); }': {
+      index: 44,
+      lineNumber: 1,
+      column: 45,
+      message: 'Error: Line 1: Strict mode function may not have duplicate parameter names'
+    },
+
+    '(function a(eval) { "use strict"; })': {
+      index: 12,
+      lineNumber: 1,
+      column: 13,
+      message: 'Error: Line 1: Parameter name eval or arguments is not allowed in strict mode'
+    },
+
+    '(function a(package) { "use strict"; })': {
+      index: 12,
+      lineNumber: 1,
+      column: 13,
+      message: 'Error: Line 1: Use of future reserved word in strict mode'
+    }
+
+  },
+
+  'API': {
+    'parse()': {
+      call: 'parse',
+      args: [],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Identifier',
+            name: 'undefined'
+          }
+        }]
+      }
+    },
+
+    'parse(null)': {
+      call: 'parse',
+      args: [null],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Literal',
+            value: null
+          }
+        }]
+      }
+    },
+
+    'parse(42)': {
+      call: 'parse',
+      args: [42],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Literal',
+            value: 42
+          }
+        }]
+      }
+    },
+
+    'parse(true)': {
+      call: 'parse',
+      args: [true],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Literal',
+            value: true
+          }
+        }]
+      }
+    },
+
+    'parse(undefined)': {
+      call: 'parse',
+      args: [void 0],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Identifier',
+            name: 'undefined'
+          }
+        }]
+      }
+    },
+
+    'parse(new String("test"))': {
+      call: 'parse',
+      args: [new String('test')],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Identifier',
+            name: 'test'
+          }
+        }]
+      }
+    },
+
+    'parse(new Number(42))': {
+      call: 'parse',
+      args: [new Number(42)],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Literal',
+            value: 42
+          }
+        }]
+      }
+    },
+
+    'parse(new Boolean(true))': {
+      call: 'parse',
+      args: [new Boolean(true)],
+      result: {
+        type: 'Program',
+        body: [{
+          type: 'ExpressionStatement',
+          expression: {
+            type: 'Literal',
+            value: true
+          }
+        }]
+      }
+    }
+
+  },
+
+  'Tolerant parse': {
+    'return': {
+      type: 'Program',
+      body: [{
+        type: 'ReturnStatement',
+        'argument': null,
+        range: [0, 5],
+        loc: {
+          start: { line: 1, column: 0 },
+          end: { line: 1, column: 6 }
+        }
+      }],
+      range: [0, 5],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 1, column: 6 }
+      },
+      errors: [{
+        index: 6,
+        lineNumber: 1,
+        column: 7,
+        message: 'Error: Line 1: Illegal return statement'
+      }]
+    },
+
+    '(function () { \'use strict\'; with (i); }())': {
+      type: 'Program',
+      body: [{
+        type: 'ExpressionStatement',
+        expression: {
+          type: 'CallExpression',
+          callee: {
+            type: 'FunctionExpression',
+            id: null,
+            params: [],
+            body: {
+              type: 'BlockStatement',
+              body: [{
+                type: 'ExpressionStatement',
+                expression: {
+                  type: 'Literal',
+                  value: 'use strict',
+                  raw: '\'use strict\'',
+                  range: [15, 26],
+                  loc: {
+                    start: { line: 1, column: 15 },
+                    end: { line: 1, column: 27 }
+                  }
+                },
+                range: [15, 27],
+                loc: {
+                  start: { line: 1, column: 15 },
+                  end: { line: 1, column: 28 }
+                }
+              }, {
+                type: 'WithStatement',
+                object: {
+                  type: 'Identifier',
+                  name: 'i',
+                  range: [35, 35],
+                  loc: {
+                    start: { line: 1, column: 35 },
+                    end: { line: 1, column: 36 }
+                  }
+                },
+                body: {
+                  type: 'EmptyStatement',
+                  range: [37, 37],
+                  loc: {
+                    start: { line: 1, column: 37 },
+                    end: { line: 1, column: 38 }
+                  }
+                },
+                range: [29, 37],
+                loc: {
+                  start: { line: 1, column: 29 },
+                  end: { line: 1, column: 38 }
+                }
+              }],
+              range: [13, 39],
+              loc: {
+                start: { line: 1, column: 13 },
+                end: { line: 1, column: 40 }
+              }
+            },
+            range: [1, 39],
+            loc: {
+              start: { line: 1, column: 1 },
+              end: { line: 1, column: 40 }
+            }
+          },
+          'arguments': [],
+          range: [0, 42],
+          loc: {
+            start: { line: 1, column: 0 },
+            end: { line: 1, column: 43 }
+          }
+        },
+        range: [0, 42],
+        loc: {
+          start: { line: 1, column: 0 },
+          end: { line: 1, column: 43 }
+        }
+      }],
+      range: [0, 42],
+      loc: {
+        start: { line: 1, column: 0 },
+        end: { line: 1, column: 43 }
+      },
+      errors: [{
+        index: 29,
+        lineNumber: 1,
+        column: 30,
+        message: 'Error: Line 1: Strict mode code may not include a with statement'
+      }]
+    }
+
+  }
 };
 
 // Special handling for regular expression literal since we need to
 // convert it to a string literal, otherwise it will be decoded
 // as object "{}" and the regular expression would be lost.
 function adjustRegexLiteral(key, value) {
-    'use strict';
-    if (key === 'value' && value instanceof RegExp) {
-        value = value.toString();
-    }
-    return value;
+  'use strict';
+  if (key === 'value' && value instanceof RegExp) {
+    value = value.toString();
+  }
+  return value;
 }
 
 if (typeof window === 'undefined') {
-    var esprima = require('../esprima');
+  var esprima = require('../esprima');
 }
 
 function NotMatchingError(expected, actual) {
-    'use strict';
-    Error.call(this, 'Expected ');
-    this.expected = expected;
-    this.actual = actual;
+  'use strict';
+  Error.call(this, 'Expected ');
+  this.expected = expected;
+  this.actual = actual;
 }
 NotMatchingError.prototype = new Error();
 
 function errorToObject(e) {
-    'use strict';
-    var msg = e.toString();
+  'use strict';
+  var msg = e.toString();
 
-    // Opera 9.64 produces an non-standard string in toString().
-    if (msg.substr(0, 6) !== 'Error:') {
-        if (typeof e.message === 'string') {
-            msg = 'Error: ' + e.message;
-        }
+  // Opera 9.64 produces an non-standard string in toString().
+  if (msg.substr(0, 6) !== 'Error:') {
+    if (typeof e.message === 'string') {
+      msg = 'Error: ' + e.message;
     }
+  }
 
-    return {
-        index: e.index,
-        lineNumber: e.lineNumber,
-        column: e.column,
-        message: msg
-    };
+  return {
+    index: e.index,
+    lineNumber: e.lineNumber,
+    column: e.column,
+    message: msg
+  };
 }
 
 function testParse(code, syntax) {
-    'use strict';
-    var expected, tree, actual, options, StringObject, i, len, err;
+  'use strict';
+  var expected, tree, actual, options, StringObject, i, len, err;
 
-    // alias, so that JSLint does not complain.
-    StringObject = String;
+  // alias, so that JSLint does not complain.
+  StringObject = String;
 
-    options = {
-        comment: (typeof syntax.comments !== 'undefined'),
-        range: true,
-        loc: true,
-        tokens: (typeof syntax.tokens !== 'undefined'),
-        raw: true,
-        tolerant: (typeof syntax.errors !== 'undefined')
-    };
+  options = {
+    comment: (typeof syntax.comments !== 'undefined'),
+    range: true,
+    loc: true,
+    tokens: (typeof syntax.tokens !== 'undefined'),
+    raw: true,
+    tolerant: (typeof syntax.errors !== 'undefined')
+  };
 
-    expected = JSON.stringify(syntax, null, 4);
-    try {
-        tree = esprima.parse(code, options);
-        tree = (options.comment || options.tokens || options.tolerant) ? tree : tree.body[0];
+  expected = JSON.stringify(syntax, null, 4);
+  try {
+    tree = esprima.parse(code, options);
+    tree = (options.comment || options.tokens || options.tolerant) ? tree : tree.body[0];
 
-        if (options.tolerant) {
-            for (i = 0, len = tree.errors.length; i < len; i += 1) {
-                tree.errors[i] = errorToObject(tree.errors[i]);
-            }
-        }
-
-        actual = JSON.stringify(tree, adjustRegexLiteral, 4);
-
-        // Only to ensure that there is no error when using string object.
-        esprima.parse(new StringObject(code), options);
-
-    } catch (e) {
-        throw new NotMatchingError(expected, e.toString());
+    if (options.tolerant) {
+      for (i = 0, len = tree.errors.length; i < len; i += 1) {
+        tree.errors[i] = errorToObject(tree.errors[i]);
+      }
     }
-    if (expected !== actual) {
-        throw new NotMatchingError(expected, actual);
-    }
+
+    actual = JSON.stringify(tree, adjustRegexLiteral, 4);
+
+    // Only to ensure that there is no error when using string object.
+    esprima.parse(new StringObject(code), options);
+
+  } catch (e) {
+    throw new NotMatchingError(expected, e.toString());
+  }
+  if (expected !== actual) {
+    throw new NotMatchingError(expected, actual);
+  }
 }
 
 function testError(code, exception) {
-    'use strict';
-    var i, options, expected, actual, handleInvalidRegexFlag;
+  'use strict';
+  var i, options, expected, actual, handleInvalidRegexFlag;
 
-    // Different parsing options should give the same error.
-    options = [
-        {},
-        { comment: true },
-        { raw: true },
-        { raw: true, comment: true }
-    ];
+  // Different parsing options should give the same error.
+  options = [
+    {},
+    { comment: true },
+    { raw: true },
+    { raw: true, comment: true }
+  ];
 
-    // If handleInvalidRegexFlag is true, an invalid flag in a regular expression
-    // will throw an exception. In some old version V8, this is not the case
-    // and hence handleInvalidRegexFlag is false.
-    handleInvalidRegexFlag = false;
+  // If handleInvalidRegexFlag is true, an invalid flag in a regular expression
+  // will throw an exception. In some old version V8, this is not the case
+  // and hence handleInvalidRegexFlag is false.
+  handleInvalidRegexFlag = false;
+  try {
+    'test'.match(new RegExp('[a-z]', 'x'));
+  } catch (e) {
+    handleInvalidRegexFlag = true;
+  }
+
+  expected = JSON.stringify(exception);
+
+  for (i = 0; i < options.length; i += 1) {
+
     try {
-        'test'.match(new RegExp('[a-z]', 'x'));
+      esprima.parse(code, options[i]);
     } catch (e) {
-        handleInvalidRegexFlag = true;
+      actual = JSON.stringify(errorToObject(e));
     }
 
-    expected = JSON.stringify(exception);
+    if (expected !== actual) {
 
-    for (i = 0; i < options.length; i += 1) {
-
-        try {
-            esprima.parse(code, options[i]);
-        } catch (e) {
-            actual = JSON.stringify(errorToObject(e));
+      // Compensate for old V8 which does not handle invalid flag.
+      if (exception.message.indexOf('Invalid regular expression') > 0) {
+        if (typeof actual === 'undefined' && !handleInvalidRegexFlag) {
+          return;
         }
+      }
 
-        if (expected !== actual) {
-
-            // Compensate for old V8 which does not handle invalid flag.
-            if (exception.message.indexOf('Invalid regular expression') > 0) {
-                if (typeof actual === 'undefined' && !handleInvalidRegexFlag) {
-                    return;
-                }
-            }
-
-            throw new NotMatchingError(expected, actual);
-        }
-
+      throw new NotMatchingError(expected, actual);
     }
+
+  }
 }
 
 function testAPI(code, result) {
-    'use strict';
-    var expected, res, actual;
+  'use strict';
+  var expected, res, actual;
 
-    expected = JSON.stringify(result.result, null, 4);
-    try {
-        res = esprima[result.call].apply(esprima, result.args);
-        actual = JSON.stringify(res, adjustRegexLiteral, 4);
-    } catch (e) {
-        throw new NotMatchingError(expected, e.toString());
-    }
-    if (expected !== actual) {
-        throw new NotMatchingError(expected, actual);
-    }
+  expected = JSON.stringify(result.result, null, 4);
+  try {
+    res = esprima[result.call].apply(esprima, result.args);
+    actual = JSON.stringify(res, adjustRegexLiteral, 4);
+  } catch (e) {
+    throw new NotMatchingError(expected, e.toString());
+  }
+  if (expected !== actual) {
+    throw new NotMatchingError(expected, actual);
+  }
 }
 
 function runTest(code, result) {
-    'use strict';
-    if (result.hasOwnProperty('lineNumber')) {
-        testError(code, result);
-    } else if (result.hasOwnProperty('result')) {
-        testAPI(code, result);
-    } else {
-        testParse(code, result);
-    }
+  'use strict';
+  if (result.hasOwnProperty('lineNumber')) {
+    testError(code, result);
+  } else if (result.hasOwnProperty('result')) {
+    testAPI(code, result);
+  } else {
+    testParse(code, result);
+  }
 }
 
 if (typeof window !== 'undefined') {
-    // Run all tests in a browser environment.
-    runTests = function () {
-        'use strict';
-        var total = 0,
+  // Run all tests in a browser environment.
+  runTests = function() {
+    'use strict';
+    var total = 0,
             failures = 0,
             category,
             fixture,
@@ -16679,133 +16773,133 @@ if (typeof window !== 'undefined') {
             index,
             len;
 
-        function setText(el, str) {
-            if (typeof el.innerText === 'string') {
-                el.innerText = str;
-            } else {
-                el.textContent = str;
+    function setText(el, str) {
+      if (typeof el.innerText === 'string') {
+        el.innerText = str;
+      } else {
+        el.textContent = str;
+      }
+    }
+
+    function startCategory(category) {
+      var report, e;
+      report = document.getElementById('report');
+      e = document.createElement('h4');
+      setText(e, category);
+      report.appendChild(e);
+    }
+
+    function reportSuccess(code) {
+      var report, e;
+      report = document.getElementById('report');
+      e = document.createElement('pre');
+      e.setAttribute('class', 'code');
+      setText(e, code);
+      report.appendChild(e);
+    }
+
+    function reportFailure(code, expected, actual) {
+      var report, e;
+
+      report = document.getElementById('report');
+
+      e = document.createElement('p');
+      setText(e, 'Code:');
+      report.appendChild(e);
+
+      e = document.createElement('pre');
+      e.setAttribute('class', 'code');
+      setText(e, code);
+      report.appendChild(e);
+
+      e = document.createElement('p');
+      setText(e, 'Expected');
+      report.appendChild(e);
+
+      e = document.createElement('pre');
+      e.setAttribute('class', 'expected');
+      setText(e, expected);
+      report.appendChild(e);
+
+      e = document.createElement('p');
+      setText(e, 'Actual');
+      report.appendChild(e);
+
+      e = document.createElement('pre');
+      e.setAttribute('class', 'actual');
+      setText(e, actual);
+      report.appendChild(e);
+    }
+
+    setText(document.getElementById('version'), esprima.version);
+
+    tick = new Date();
+    for (category in data) {
+      if (data.hasOwnProperty(category)) {
+        startCategory(category);
+        fixture = data[category];
+        for (source in fixture) {
+          if (fixture.hasOwnProperty(source)) {
+            expected = fixture[source];
+            total += 1;
+            try {
+              runTest(source, expected);
+              reportSuccess(source, JSON.stringify(expected, null, 4));
+            } catch (e) {
+              failures += 1;
+              reportFailure(source, e.expected, e.actual);
             }
+          }
         }
+      }
+    }
+    tick = (new Date()) - tick;
 
-        function startCategory(category) {
-            var report, e;
-            report = document.getElementById('report');
-            e = document.createElement('h4');
-            setText(e, category);
-            report.appendChild(e);
-        }
-
-        function reportSuccess(code) {
-            var report, e;
-            report = document.getElementById('report');
-            e = document.createElement('pre');
-            e.setAttribute('class', 'code');
-            setText(e, code);
-            report.appendChild(e);
-        }
-
-        function reportFailure(code, expected, actual) {
-            var report, e;
-
-            report = document.getElementById('report');
-
-            e = document.createElement('p');
-            setText(e, 'Code:');
-            report.appendChild(e);
-
-            e = document.createElement('pre');
-            e.setAttribute('class', 'code');
-            setText(e, code);
-            report.appendChild(e);
-
-            e = document.createElement('p');
-            setText(e, 'Expected');
-            report.appendChild(e);
-
-            e = document.createElement('pre');
-            e.setAttribute('class', 'expected');
-            setText(e, expected);
-            report.appendChild(e);
-
-            e = document.createElement('p');
-            setText(e, 'Actual');
-            report.appendChild(e);
-
-            e = document.createElement('pre');
-            e.setAttribute('class', 'actual');
-            setText(e, actual);
-            report.appendChild(e);
-        }
-
-        setText(document.getElementById('version'), esprima.version);
-
-        tick = new Date();
-        for (category in data) {
-            if (data.hasOwnProperty(category)) {
-                startCategory(category);
-                fixture = data[category];
-                for (source in fixture) {
-                    if (fixture.hasOwnProperty(source)) {
-                        expected = fixture[source];
-                        total += 1;
-                        try {
-                            runTest(source, expected);
-                            reportSuccess(source, JSON.stringify(expected, null, 4));
-                        } catch (e) {
-                            failures += 1;
-                            reportFailure(source, e.expected, e.actual);
-                        }
-                    }
-                }
-            }
-        }
-        tick = (new Date()) - tick;
-
-        if (failures > 0) {
-            setText(document.getElementById('status'), total + ' tests. ' +
-                'Failures: ' + failures + '. ' + tick + ' ms');
-        } else {
-            setText(document.getElementById('status'), total + ' tests. ' +
-                'No failure. ' + tick + ' ms');
-        }
-    };
+    if (failures > 0) {
+      setText(document.getElementById('status'), total + ' tests. ' +
+          'Failures: ' + failures + '. ' + tick + ' ms');
+    } else {
+      setText(document.getElementById('status'), total + ' tests. ' +
+          'No failure. ' + tick + ' ms');
+    }
+  };
 } else {
-    (function () {
-        'use strict';
+  (function() {
+    'use strict';
 
-        var total = 0,
+    var total = 0,
             failures = [],
             tick = new Date(),
             expected,
             header;
 
-        Object.keys(data).forEach(function (category) {
-            Object.keys(data[category]).forEach(function (source) {
-                total += 1;
-                expected = data[category][source];
-                try {
-                    runTest(source, expected);
-                } catch (e) {
-                    e.source = source;
-                    failures.push(e);
-                }
-            });
-        });
-        tick = (new Date()) - tick;
-
-        header = total + ' tests. ' + failures.length + ' failures. ' +
-            tick + ' ms';
-        if (failures.length) {
-            console.error(header);
-            failures.forEach(function (failure) {
-                console.error(failure.source + ': Expected\n    ' +
-                    failure.expected.split('\n').join('\n    ') +
-                    '\nto match\n    ' + failure.actual);
-            });
-        } else {
-            console.log(header);
+    Object.keys(data).forEach(function(category) {
+      Object.keys(data[category]).forEach(function(source) {
+        total += 1;
+        expected = data[category][source];
+        try {
+          runTest(source, expected);
+        } catch (e) {
+          e.source = source;
+          failures.push(e);
         }
-        process.exit(failures.length === 0 ? 0 : 1);
-    }());
+      });
+    });
+    tick = (new Date()) - tick;
+
+    header = total + ' tests. ' + failures.length + ' failures. ' +
+            tick + ' ms';
+    if (failures.length) {
+      console.error(header);
+      failures.forEach(function(failure) {
+        console.error(failure.source + ': Expected\n    ' +
+            failure.expected.split('\n').join('\n    ') +
+                    '\nto match\n    ' + failure.actual);
+      });
+    } else {
+      console.log(header);
+    }
+    process.exit(failures.length === 0 ? 0 : 1);
+  }());
 }
 /* vim: set sw=4 ts=4 et tw=80 : */
